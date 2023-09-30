@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+#logo{
+  cursor: pointer;
+  color: inherit;
+}
+.main-header {
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+}
+.header-wrapper,
+.search-filter {
+  width: min(90%, 1440px);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+.search-filter {
+    padding: 2.5em 0;
+}
+
+.header-wrapper .dark-mode {
+      background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: 600;
+}
+
+.filter {
+    position: relative;
+    -webkit-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.75);
+    padding: 0.5em 1em; 
+    cursor: pointer;
+   
+}
+
+.filter-options {
+    padding: 0.5em 1em;
+    position: absolute;
+    left: 0;
+    top: 110%;
+    width: 100%;
+    background-color:hsl(0, 0%, 98%);
+    -webkit-box-shadow: 0px 11px 20px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 11px 20px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 11px 20px -8px rgba(0,0,0,0.75);
+}
+#filter-options > div {
+    padding: 0.25em 0;
+}
+
+.main-content {
+    /* border: thick solid black; */
+    width: min(90%, 1440px);
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+}
+.main-content .country-container{
+    border-radius: 5px;
+    flex: max(20%, 325px) 0 0;
+    margin-bottom: 2.5rem;
+    -webkit-box-shadow: 0px 11px 20px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 11px 20px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 11px 20px -8px rgba(0,0,0,0.75);
+}
+.main-content img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    aspect-ratio: 1.75;
+}
+.main-content>div>div {
+    overflow-wrap: break-word;
+    padding: 1em 1em 3em 1em;
+}
+
+.main-content>div>div>h2 {
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+}
+.main-content>div>div>p>span {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1083px) {
+  .main-content {
+    justify-content: space-around;
+}
+}
+@media screen and (max-width: 722px) {
+  .main-content {
+    justify-content: center;
+}
+.search-filter {
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+}
+
+
+/* util */
+i {
+  margin-right: 0.5em;
+}
+.none {
+  display: none;
+}
+
+input[type="text"] {
+  font-size: 1.1em;
+  width: 400px;
+  max-width: 400px;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 300;
+  -webkit-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.75);
+}
+
+
+.body-dark {
+  background-color: hsl(207, 26%, 17%);
+  color: white;
+}
+.dark {
+  background-color: hsl(209, 23%, 22%);
+  color: white;
+}
